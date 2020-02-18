@@ -1,6 +1,6 @@
 # Fill in templated document (docx) with an option to convert to PDF 
 
-If you're like me, trying to apply to hundreds of companies to have them ask you to submit a cover letter. Then you have to change refill your templated word document with "recruiter X", "company Y", and "position Z". So much copy and paste hassle.
+If you're like me, trying to apply to hundreds of companies to have them ask you to submit a cover letter. Then you have to change refill your templated word document with "recruiter X", "company Y", and "position Z". So much copy and paste hassle!
 
 Look no further. I've put together this fill-in template document, with the optional conversion from document to pdf.
 
