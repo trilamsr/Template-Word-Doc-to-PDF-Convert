@@ -68,4 +68,8 @@ Look no further. I've put together this fill-in template document, with the opti
 
 ## How does this work?
 
-This program works in 2 stages. First it fill in template with the key-pair values by running linear search and replace operations through the entire document. Save the filled in as a new docx document, then optionally convert said new version to pdf. 
+This program works in 3 stages. 
+
+   1. First it fill in template with the key-pair values by running linear search and replace operations through the entire document.
+   2. Save the filled in as a new docx document
+   3. Optionally convert said new version of the docx to pdf. 
