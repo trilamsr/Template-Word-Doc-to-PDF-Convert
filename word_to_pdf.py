@@ -5,7 +5,6 @@ from docx import Document
 from source_code import docx_fill_template, word_to_pdf
 
 
-
 with open('settings.json') as settings_json:
     settings = json.load(settings_json)
 

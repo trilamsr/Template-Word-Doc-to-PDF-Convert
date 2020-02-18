@@ -11,19 +11,18 @@ def word_to_pdf(input, output):
     doc.Close()
     word_doc.Quit()
 
-def docx_fill_template(doc, data):
-    paragraphs = list(doc.paragraphs)
-
+def append_paragraph(doc, ret):
     for t in doc.tables:
         for row in t.rows:
             for cell in row.cells:
                 for paragraph in cell.paragraphs:
-                    paragraphs.append(paragraph)
+                    ret.append(paragraph)
 
+def search_replace_content(paragraphs, data):
     for p in paragraphs:
         for key, val in data.items():
+            # Placeholder format: ${PlaceholderName}
             key_name = '${{{}}}'.format(key)
-            # I'm using placeholders in the form ${PlaceholderName}
             if key_name in p.text:
                 inline = p.runs
                 started = False
@@ -32,7 +31,6 @@ def docx_fill_template(doc, data):
                 found_all = False
                 replace_done = False
                 for i in range(len(inline)):
-
                     if key_name in inline[i].text and not started:
                         found_runs.append((i, inline[i].text.find(key_name), len(key_name)))
                         text = inline[i].text.replace(key_name, str(val))
@@ -85,3 +83,8 @@ def docx_fill_template(doc, data):
                         else:
                             text = inline[index].text.replace(inline[index].text[start:start + length], '')
                             inline[index].text = text
+
+def docx_fill_template(doc, data):
+    paragraphs = list(doc.paragraphs)
+    append_paragraph(doc, paragraphs)
+    search_replace_content(paragraphs, data)

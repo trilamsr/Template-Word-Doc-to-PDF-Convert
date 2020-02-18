@@ -5,7 +5,6 @@ If you're like me, trying to apply to hundreds of companies to have them ask you
 Look no further. I've put together this fill-in template document, with the optional conversion from document to pdf.
 
 
-
 ## How to use:
    
 1. Have your template doc be in "docx" extension. The dependency python.docx does not work with "doc" extension. Under the hood, "docx" is a zip file containing xml and css file.
@@ -21,9 +20,6 @@ Look no further. I've put together this fill-in template document, with the opti
 
 3. Open profile.json and put in the variable names and values.
 
-    >Note: profile.json is an array at the top level. You can put in as many profile as you want. The output(s) will be the name of the file + docx/pdf (apple.pdf, google.docx)
-
-    >Note 2: if no matching ${key} is given, the program can optionally convert the docx to pdf file. View edit options below. The number of converted file corresponds to the number of profiles in profile.json
 
         [
             {
@@ -72,4 +68,9 @@ This program works in 3 stages.
 
    1. First it fill in template with the key-pair values by running linear search and replace operations through the entire document.
    2. Save the filled in as a new docx document
-   3. Optionally convert said new version of the docx to pdf. 
+   3. Optionally convert said new version of the docx to pdf.
+
+Tips:
+   1. If no matching ${key} is given, the program can optionally convert the docx to pdf file. View edit options below. The number of converted file corresponds to the number of profiles in profile.json
+   2. profile.json is an array at the top level. You can put in as many profile as you want. The output(s) will be the name of the file + docx/pdf (apple.pdf, google.docx)
+
