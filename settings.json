@@ -1,6 +1,6 @@
 {
-    "convert_to_pdf": true,
-    "keep_word_copy": false,
-    "template_location": "./template.docx",
-    "target_location": "C:/Users/Tree/Desktop/new.docx"
+    "create_pdf": true,
+    "create_word_doc": true,
+    "target_template": "./sample_format/template.docx",
+    "output_location": "./sample_output/"
 }

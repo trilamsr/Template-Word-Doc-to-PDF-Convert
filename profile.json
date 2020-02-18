@@ -1,8 +1,23 @@
-{   
-    "my_name":"STEVE JOBLESS",
-    "MY_NAME": "STEVE JOBLESS",
-    "recipient": "Zuker",
-    "company": "tisla",
-    "street_address":"420 the hood",
-    "apt_unit": "69"
-}
+[
+    {
+        "output_name": "Apple",
+        "profile": 
+        {
+            "my_name":"STEVE JOBLESS",
+            "MY_NAME": "STEVE JOBLESS",
+            "recipient": "Zukerman",
+            "company": "Tisla"
+        }
+    },
+
+    {
+        "output_name": "Google",
+        "profile": 
+        {
+            "my_name":"STEVEN SOON-TO-GET-JOBS",
+            "MY_NAME": "STEVEN SOON-TO-GET-JOBS",
+            "recipient": "Zuker",
+            "company": "SpaceX"
+        }
+    }
+]
